@@ -96,9 +96,21 @@ namespace WGUMobileProject.Views
 
         public async void OnNewButtonClicked(object sender, EventArgs args)
         {
-            await App.DatabaseData.AddNewCourseAsync("Course 1 - C111"
-                , "In Progress", "This is the first of all of your development Classes", true, "", "ProfessorSmall.png"
-                , "Bob Man", "bman@gmail.com", "1111111111", true, false, "P112", "O212");
+            await App.DatabaseData.AddNewCourseAsync("Course 1 - C111", 
+                "In Progress",
+                "This is the first of all of your development Classes",
+                true,
+                "",
+                //"ProfessorSmall.png",
+                "Bob Man",
+                1,
+                "bman@gmail.com",
+                "1111111111",
+                true, 
+                false,
+                "P112", 
+                "O212", 
+                DateTime.Today, DateTime.Today, DateTime.Today, DateTime.Today);
         }
 
         /// <summary>
